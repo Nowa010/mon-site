@@ -1,11 +1,8 @@
-export async function handler() {
+exports.handler = async function() {
   return {
     statusCode: 200,
-    headers: {
-      "Content-Type": "application/json"
-    },
     body: JSON.stringify({
       message: "Netlify function OK"
     })
   };
-}
+};
